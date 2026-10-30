@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.landing {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 32px;
+}
+
+p {
+    color: gray;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
