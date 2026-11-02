@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Stings Problems</title>
+</head>
+<body>
+    
+    <h1>Arrays and Strings Problem Set</h1>
+
+    <script>
+
+        // 1. Find the sum of all array elements
+        let numbers = [10, 20, 30, 40, 50];
+
+        let sum = 0;
+
+        for (let i = 0; i < numbers.length; i++) {
+            sum = sum + numbers[i];
+        }
+
+        console.log("Sum of Array:", sum);
+
+
+        // 2. Find the largest number in an array
+        let values = [12, 45, 23, 67, 34];
+
+        let largest = values[0];
+
+        for (let i = 1; i < values.length; i++) {
+            if (values[i] > largest) {
+                largest = values[i];
+            }
+        }
+
+        console.log("Largest Number:", largest);
+
+
+        // 3. Reverse a string
+        let text = "JavaScript";
+
+        let reversed = text.split("").reverse().join("");
+
+        console.log("Reversed String:", reversed);
+
+
+        // 4. Count the number of vowels in a string
+        let word = "Programming";
+
+        let count = 0;
+
+        for (let i = 0; i < word.length; i++) {
+            let character = word[i].toLowerCase();
+
+            if (
+                character === "a" ||
+                character === "e" ||
+                character === "i" ||
+                character === "o" ||
+                character === "u"
+            ) {
+                count++;
+            }
+        }
+
+        console.log("Number of Vowels:", count);
+
+
+        // 5. Remove duplicate elements from an array
+        let items = [1, 2, 3, 2, 4, 3, 5];
+
+        let uniqueItems = [];
+
+        for (let i = 0; i < items.length; i++) {
+            if (!uniqueItems.includes(items[i])) {
+                uniqueItems.push(items[i]);
+            }
+        }
+
+        console.log("Array Without Duplicates:", uniqueItems);
+
+
+        // 6. Check whether a string is a palindrome
+        let original = "madam";
+
+        let reverse = original.split("").reverse().join("");
+
+        if (original === reverse) {
+            console.log("Palindrome: Yes");
+        } else {
+            console.log("Palindrome: No");
+        }
+
+    </script>
+
+</body>
+</html>

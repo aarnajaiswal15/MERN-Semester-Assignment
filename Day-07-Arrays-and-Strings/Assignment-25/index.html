@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List Manager</title>
+</head>
+<body>
+    
+    <h1>Shopping List Manager</h1>
+
+    <script>
+
+        // Create an empty shopping list
+        let shoppingList = [];
+
+        // Function to add an item
+        function addItem(item) {
+            shoppingList.push(item);
+            console.log(item + " added to the shopping list.");
+        }
+
+        // Function to remove an item
+        function removeItem(item) {
+            let index = shoppingList.indexOf(item);
+
+            if (index !== -1) {
+                shoppingList.splice(index, 1);
+                console.log(item + " removed from the shopping list.");
+            }
+            else {
+                console.log(item + " not found.");
+            }
+        }
+
+        // Function to display the list
+        function displayList() {
+            console.log("Shopping List:");
+
+            for (let i = 0; i < shoppingList.length; i++) {
+                console.log((i + 1) + ". " + shoppingList[i]);
+            }
+        }
+
+        // Function to count items
+        function countItems() {
+            console.log("Total Items:", shoppingList.length);
+        }
+
+        // Adding items
+        addItem("Milk");
+        addItem("Bread");
+        addItem("Eggs");
+        addItem("Apples");
+
+        // Displaying the list
+        displayList();
+
+        // Counting items
+        countItems();
+
+        // Removing an item
+        removeItem("Bread");
+
+        // Displaying the updated list
+        displayList();
+
+        countItems();
+
+    </script>
+
+</body>
+</html>

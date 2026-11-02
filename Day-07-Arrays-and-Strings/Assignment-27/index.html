@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Cleaning Utility</title>
+</head>
+<body>
+    
+    <h1>Text Cleaning Utility</h1>
+
+    <script>
+
+        // Function to remove extra spaces
+        function removeExtraSpaces(text) {
+            return text.trim().replace(/\s+/g, " ");
+        }
+
+        // Function to convert text to lowercase
+        function convertToLowercase(text) {
+            return text.toLowerCase();
+        }
+
+        // Function to convert text to uppercase
+        function convertToUppercase(text) {
+            return text.toUpperCase();
+        }
+
+        // Function to clean a name
+        function cleanName(name) {
+            if (name.trim() === "") {
+                return "Name cannot be empty";
+            }
+
+            return removeExtraSpaces(name);
+        }
+
+        // Sample inputs
+        let name = "   Aarna    Jaiswal   ";
+        let email = "  AARNA@GMAIL.COM  ";
+        let message = "   Hello    World!   ";
+
+        console.log("Original Name:", name);
+        console.log("Cleaned Name:", cleanName(name));
+
+        console.log("Cleaned Email:", convertToLowercase(email.trim()));
+
+        console.log("Cleaned Message:", removeExtraSpaces(message));
+
+        console.log("Uppercase Message:", convertToUppercase(message.trim()));
+
+        console.log("Empty Name:", cleanName("   "));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Dataset</title>
+</head>
+<body>
+    
+    <h1>Product Dataset Analysis</h1>
+
+    <script>
+        // Product dataset
+        let products = [
+            { name: "Laptop", category: "Electronics", price: 50000 },
+            { name: "Mobile", category: "Electronics", price: 20000 },
+            { name: "Shoes", category: "Fashion", price: 1500 },
+            { name: "Watch", category: "Fashion", price: 2500 },
+            { name: "Headphones", category: "Electronics", price: 3000 }
+        ];
+
+        // 1. Filter electronics products
+        let electronics = products.filter(function(product) {
+            return product.category === "Electronics";
+        });
+
+        console.log("Electronics Products:", electronics);
+
+        // 2. Filter products below ₹5000
+        let affordableProducts = products.filter(function(product) {
+            return product.price < 5000;
+        });
+
+        console.log("Affordable Products:", affordableProducts);
+
+        // 3. Transform product data using map()
+        let productNames = products.map(function(product) {
+            return product.name;
+        });
+
+        console.log("Product Names:", productNames);
+
+        // 4. Calculate total price using reduce()
+        let totalPrice = products.reduce(function(total, product) {
+            return total + product.price;
+        }, 0);
+
+        console.log("Total Product Value:", totalPrice);
+
+        // 5. Calculate average price
+        let averagePrice = totalPrice / products.length;
+
+        console.log("Average Product Price:", averagePrice);
+
+        // 6. Count total products
+        console.log("Total Products:", products.length);
+
+    </script>
+
+</body>
+</html>
