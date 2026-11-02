@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practical</title>
+</head>
+<body>
+    
+    <h1>JavaScript Utilities Practical</h1>
+
+    <script src="utilities.js"></script>
+
+    <script>
+
+        // Testing Name Validation
+        console.log("Name:", validateName("Aarna"));
+        console.log("Empty Name:", validateName(""));
+
+
+        // Testing Age Validation
+        console.log("Age:", validateAge(19));
+        console.log("Invalid Age:", validateAge(-5));
+
+
+        // Testing Email Validation
+        console.log("Email:", validateEmail("aarna@gmail.com"));
+        console.log("Invalid Email:", validateEmail("aarna123"));
+
+
+        // Testing Settings Merge
+        let defaultSettings = {
+            theme: "light",
+            language: "English"
+        };
+
+        let userSettings = {
+            theme: "dark"
+        };
+
+        console.log(
+            "Merged Settings:",
+            mergeSettings(defaultSettings, userSettings)
+        );
+
+
+        // Testing Total Calculation
+        let prices = [100, 200, 300];
+
+        console.log("Total:", calculateTotal(prices));
+
+    </script>
+
+</body>
+</html>

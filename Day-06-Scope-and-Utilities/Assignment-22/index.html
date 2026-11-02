@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Utility Library</title>
+</head>
+<body>
+    
+    <h1>Validation Utility Library</h1>
+
+    <script src="validationUtils.js"></script>
+
+    <script>
+
+        console.log(validateName("Aarna"));
+
+        console.log(validateAge(19));
+
+        console.log(validateEmail("aarna@gmail.com"));
+
+        console.log(validatePassword("aarna123"));
+
+        console.log(validateMarks(85));
+
+        // Testing invalid values
+
+        console.log(validateName(""));
+
+        console.log(validateAge(-5));
+
+        console.log(validateEmail("aarna123"));
+
+        console.log(validatePassword("123"));
+
+        console.log(validateMarks(120));
+
+    </script>
+
+</body>
+</html>

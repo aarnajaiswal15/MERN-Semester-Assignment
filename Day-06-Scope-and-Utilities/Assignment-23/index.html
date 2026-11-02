@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Utility Functions</title>
+</head>
+<body>
+    
+    <h1>Settings and Total Calculator</h1>
+
+    <script src="utilities.js"></script>
+
+    <script>
+
+        // Testing mergeSettings()
+
+        let defaultSettings = {
+            theme: "light",
+            language: "English",
+            notifications: true
+        };
+
+        let userSettings = {
+            theme: "dark",
+            language: "Hindi"
+        };
+
+        let finalSettings = mergeSettings(
+            defaultSettings,
+            userSettings
+        );
+
+        console.log("Final Settings:", finalSettings);
+
+
+        // Testing calculateTotal()
+
+        let prices = [100, 200, 300, 400];
+
+        let total = calculateTotal(prices);
+
+        console.log("Total Amount:", total);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Hoisting</title>
+</head>
+<body>
+    
+    <h1>Scope and Hoisting Worksheet</h1>
+
+    <script>
+
+        // Question 1: Global Scope
+        let name = "Aarna";
+
+        function displayName() {
+            console.log(name);
+        }
+
+        displayName();
+
+
+        // Question 2: Local Scope
+        function showAge() {
+            let age = 19;
+            console.log(age);
+        }
+
+        showAge();
+
+
+        // Question 3: Block Scope
+        let x = 10;
+
+        if (true) {
+            let x = 20;
+            console.log(x);
+        }
+
+        console.log(x);
+
+
+        // Question 4: Hoisting with var
+        console.log(a);
+        var a = 50;
+
+
+        // Question 5: Hoisting with let
+        let b = 100;
+        console.log(b);
+
+
+        // Question 6: Function Hoisting
+        greet();
+
+        function greet() {
+            console.log("Hello, JavaScript!");
+        }
+
+    </script>
+    
+</body>
+</html>
