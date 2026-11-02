@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: darkblue;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Welcome section */
+
+.welcome {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Content cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        padding: 35px 15px;
+    }
+
+}
