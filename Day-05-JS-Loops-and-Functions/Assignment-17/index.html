@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Based Problems</title>
+</head>
+<body>
+    
+    <h1>JavaScript Loop Problems</h1>
+
+    <script>
+
+        // Problem 1: Print numbers from 1 to 10
+        console.log("Problem 1: Numbers from 1 to 10");
+
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+
+        // Problem 2: Print even numbers from 1 to 20
+        console.log("Problem 2: Even Numbers");
+
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+        }
+
+
+        // Problem 3: Calculate the sum of numbers from 1 to 10
+        console.log("Problem 3: Sum of Numbers");
+
+        let sum = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            sum = sum + i;
+        }
+
+        console.log("Sum:", sum);
+
+
+        // Problem 4: Print the multiplication table of 5
+        console.log("Problem 4: Table of 5");
+
+        for (let i = 1; i <= 10; i++) {
+            console.log("5 x", i, "=", 5 * i);
+        }
+
+
+        // Problem 5: Calculate the factorial of 5
+        console.log("Problem 5: Factorial");
+
+        let factorial = 1;
+
+        for (let i = 1; i <= 5; i++) {
+            factorial = factorial * i;
+        }
+
+        console.log("Factorial:", factorial);
+
+    </script>
+    
+</body>
+</html>
