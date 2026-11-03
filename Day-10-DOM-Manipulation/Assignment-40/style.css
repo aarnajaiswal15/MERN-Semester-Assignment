@@ -1,0 +1,36 @@
+
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+#card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    color: darkblue;
+}
+
+.card p {
+    color: gray;
+}
