@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Summary Generator</title>
+</head>
+<body>
+    
+    <h1>Student Profile Summary</h1>
+
+    <script>
+
+        // Create student profile object
+        let student = {
+            name: "Aarna Jaiswal",
+            age: 19,
+            course: "BCA AI",
+            semester: 3,
+            university: "Invertis University"
+        };
+
+        // Display complete profile
+        console.log("Student Profile:", student);
+
+        // Get all property names
+        let keys = Object.keys(student);
+        console.log("Profile Keys:", keys);
+
+        // Get all property values
+        let values = Object.values(student);
+        console.log("Profile Values:", values);
+
+        // Get key-value pairs
+        let entries = Object.entries(student);
+        console.log("Profile Entries:", entries);
+
+        // Generate profile summary
+        let summary = "My name is " + student.name +
+            ". I am " + student.age + " years old." +
+            " I am studying " + student.course +
+            " in semester " + student.semester +
+            " at " + student.university + ".";
+
+        console.log("Profile Summary:", summary);
+
+    </script>
+    
+</body>
+</html>

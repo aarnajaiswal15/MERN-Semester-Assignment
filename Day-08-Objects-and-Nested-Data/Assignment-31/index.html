@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    
+    <h1>Shopping Cart</h1>
+
+    <script>
+
+        // Create cart object
+        let cart = {
+            products: [
+                { name: "Laptop", price: 50000, quantity: 1 },
+                { name: "Mouse", price: 500, quantity: 2 },
+                { name: "Keyboard", price: 1000, quantity: 1 }
+            ],
+
+            // Calculate total price
+            calculateTotal: function() {
+                let total = 0;
+
+                for (let i = 0; i < this.products.length; i++) {
+                    total = total + (this.products[i].price * this.products[i].quantity);
+                }
+
+                return total;
+            },
+
+            // Validate quantity
+            validateQuantity: function(quantity) {
+                if (quantity <= 0 || !Number.isInteger(quantity)) {
+                    return "Invalid quantity";
+                }
+
+                return "Valid quantity";
+            }
+        };
+
+        // Display cart products
+        console.log("Cart Products:");
+
+        for (let i = 0; i < cart.products.length; i++) {
+            console.log(
+                cart.products[i].name,
+                "Price:", cart.products[i].price,
+                "Quantity:", cart.products[i].quantity
+            );
+        }
+
+        // Calculate and display total
+        console.log("Total Cart Amount:", cart.calculateTotal());
+
+        // Test quantity validation
+        console.log("Quantity 2:", cart.validateQuantity(2));
+        console.log("Quantity 0:", cart.validateQuantity(0));
+        console.log("Quantity -1:", cart.validateQuantity(-1));
+        console.log("Quantity 2.5:", cart.validateQuantity(2.5));
+
+    </script>
+
+</body>
+</html>

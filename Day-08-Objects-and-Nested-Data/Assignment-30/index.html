@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Object</title>
+</head>
+<body>
+    
+    <h1>Product Details</h1>
+
+    <script>
+
+        // Create a product object
+        let product = {
+            name: "Laptop",
+            brand: "HP",
+            price: 55000,
+            category: "Electronics",
+            inStock: true,
+
+            specifications: {
+                processor: "Intel Core i5",
+                ram: "8GB",
+                storage: "512GB SSD",
+                display: "15.6 inches"
+            },
+
+            warranty: {
+                duration: "1 year",
+                type: "Manufacturer Warranty"
+            }
+        };
+
+        // Display product details
+        console.log("Product Name:", product.name);
+        console.log("Brand:", product.brand);
+        console.log("Price:", product.price);
+        console.log("Category:", product.category);
+        console.log("Available:", product.inStock);
+
+        // Display nested specifications
+        console.log("Processor:", product.specifications.processor);
+        console.log("RAM:", product.specifications.ram);
+        console.log("Storage:", product.specifications.storage);
+        console.log("Display:", product.specifications.display);
+
+        // Display warranty details
+        console.log("Warranty Duration:", product.warranty.duration);
+        console.log("Warranty Type:", product.warranty.type);
+
+        // Display complete product object
+        console.log("Complete Product:", product);
+
+    </script>
+
+</body>
+</html>
