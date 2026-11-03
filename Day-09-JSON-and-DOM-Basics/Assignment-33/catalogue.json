@@ -1,0 +1,33 @@
+
+{
+    "catalogue": [
+        {
+            "id": 1,
+            "name": "Laptop",
+            "category": "Electronics",
+            "price": 55000,
+            "inStock": true
+        },
+        {
+            "id": 2,
+            "name": "Mobile",
+            "category": "Electronics",
+            "price": 20000,
+            "inStock": true
+        },
+        {
+            "id": 3,
+            "name": "Shoes",
+            "category": "Fashion",
+            "price": 1500,
+            "inStock": false
+        },
+        {
+            "id": 4,
+            "name": "Watch",
+            "category": "Fashion",
+            "price": 2500,
+            "inStock": true
+        }
+    ]
+}

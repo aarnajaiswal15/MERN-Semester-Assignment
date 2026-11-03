@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Validation</title>
+</head>
+<body>
+    
+    <h1>Product Catalogue</h1>
+
+    <script>
+
+        // Read the JSON file
+        fetch("catalogue.json")
+            .then(function(response) {
+                return response.json();
+            })
+
+            .then(function(data) {
+
+                console.log("Catalogue Data:", data);
+
+                // Validate catalogue
+                if (Array.isArray(data.catalogue) && data.catalogue.length > 0) {
+
+                    console.log("Catalogue is valid");
+
+                } else {
+
+                    console.log("Catalogue is invalid");
+
+                }
+
+                // Display product details
+                data.catalogue.forEach(function(product) {
+
+                    console.log("Product Name:", product.name);
+                    console.log("Price:", product.price);
+                    console.log("Category:", product.category);
+
+                });
+
+            })
+
+            .catch(function(error) {
+                console.log("Error:", error);
+            });
+
+    </script>
+
+</body>
+</html>

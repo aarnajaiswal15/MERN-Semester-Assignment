@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Utilities</title>
+</head>
+<body>
+    
+    <h1>Catalogue Data and Utilities</h1>
+
+    <script src="utilities.js"></script>
+
+    <script>
+
+        fetch("catalogue.json")
+            .then(function(response) {
+                return response.json();
+            })
+
+            .then(function(data) {
+
+                let products = data.catalogue;
+
+                // Test 1: Validate catalogue
+                console.log("Catalogue Valid:", validateCatalogue(products));
+
+                // Test 2: Find product by ID
+                let product = findProductById(products, 1);
+                console.log("Product Found:", product);
+
+                // Test 3: Filter by category
+                let electronics = filterByCategory(products, "Electronics");
+                console.log("Electronics Products:", electronics);
+
+                // Test 4: Calculate total value
+                let total = calculateTotalValue(products);
+                console.log("Total Catalogue Value:", total);
+
+            })
+
+            .catch(function(error) {
+                console.log("Error:", error);
+            });
+
+    </script>
+
+</body>
+</html>
