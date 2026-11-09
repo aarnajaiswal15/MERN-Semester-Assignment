@@ -1,0 +1,36 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    width: 350px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 8px;
+    width: 60%;
+}
+
+button {
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+li {
+    text-align: left;
+    margin: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
