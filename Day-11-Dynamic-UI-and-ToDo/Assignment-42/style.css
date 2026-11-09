@@ -1,0 +1,52 @@
+
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    background-color: white;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#summary {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightblue;
+}

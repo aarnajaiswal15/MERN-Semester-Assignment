@@ -1,0 +1,40 @@
+
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+input {
+    width: 65%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    margin-top: 15px;
+    padding: 8px;
+    background-color: lightblue;
+}
